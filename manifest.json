@@ -1,0 +1,16 @@
+{
+  "name": "adblock",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "adblock.html",
+    "default_icon": "adblock.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.weblio.jp/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
